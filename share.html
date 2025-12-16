@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily Harvest – Create & Share</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+
+<body id="top" class="share-page">
+  <header class="site-header">
+    <div class="logo">
+      <img
+        src="images/image1.png"
+        srcset="images/image1-2x.png 2x"
+        width="80" height="80"
+        alt="Daily Harvest logo">
+    </div>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Overview</a></li>
+        <li><a href="chart.html">Why Us</a></li>
+        <li><a class="active" href="share.html">Create &amp; Share</a></li>
+        <li><a href="../index.html" class="homepage-btn">Homepage</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- COLLABORATIONS SECTION -->
+    <section class="section share-collab" id="collabs">
+      <h1>Daily Harvest drives sales by collaborating with celebrities and influencers</h1>
+
+      <div class="collab-grid">
+        <div class="collab-tl">
+          <ul>
+            <li>“Post-workout recovery blend”</li>
+            <li>“5-minute morning fuel before work”</li>
+          </ul>
+        </div>
+
+        <figure class="collab-ir1">
+          <img
+            src="images/image11.png"
+            srcset="images/image11-2x.png 2x"
+            width="420" height="280"
+            alt="Creator filming at-home smoothie preparation">
+        </figure>
+
+        <figure class="collab-il1">
+          <img
+            src="images/image12.png"
+            srcset="images/image12-2x.png 2x"
+            width="420" height="280"
+            alt="Influencer posing with Daily Harvest smoothie">
+        </figure>
+
+        <div class="collab-tr">
+          <ul>
+            <li>Show fridge restocks and weekday morning usage</li>
+          </ul>
+        </div>
+
+        <div class="collab-bl">
+          <ul>
+            <li>“My Morning Routine”</li>
+            <li>Blend DH before Pilates, yoga, or gym sessions</li>
+          </ul>
+        </div>
+
+        <figure class="collab-ir2">
+          <img
+            src="images/image13.png"
+            srcset="images/image13-2x.png 2x"
+            width="420" height="280"
+            alt="Influencer sharing morning routine with Daily Harvest">
+        </figure>
+      </div>
+    </section>
+
+    <!-- VIDEO SECTION (HTML VIDEO) -->
+    <section class="section" id="trends">
+      <h2>Starting Trends and Challenges</h2>
+      <p>Short-form content, taste-testing challenges, and “blend with me” videos help Daily Harvest reach new audiences organically.</p>
+
+      <figure class="video-wrapper">
+        <video controls width="900">
+          <source src="media/video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <figcaption>Sample Daily Harvest content showing trial and habit-building.</figcaption>
+      </figure>
+    </section>
+
+    <!-- CREATE & SHARE FORM -->
+    <section class="section" id="create-share">
+      <h2>Create &amp; Share Your Daily Harvest Story</h2>
+      <p>Tell us how Daily Harvest fits into your lifestyle—morning routines, wellness habits, fitness fuel, or favorite blends.</p>
+
+      <div class="prompt-area">
+        <p class="prompt-label">Need inspiration? Click for a story prompt.</p>
+        <button type="button" id="promptBtn">Give me a prompt</button>
+        <div id="promptDisplay" class="prompt-box" aria-live="polite"></div>
+      </div>
+
+      <form class="share-form" action="#" method="post">
+        <div class="form-field">
+          <label for="blend">Your favorite blend or product</label>
+          <input type="text" id="blend" name="blend">
+        </div>
+
+        <div class="form-field">
+          <label for="story">Why do you like it?</label>
+          <textarea id="story" name="story" rows="5"
+            placeholder="Tell us about the taste, how you use it, and how it fits into your day."></textarea>
+        </div>
+
+        <button type="submit" id="submitBtn" class="submit-btn">Submit</button>
+        <p id="thankYouMsg" class="thank-you" hidden>Thank you for sharing your story!</p>
+      </form>
+    </section>
+
+    <p class="back-to-top"><a href="#top">Back to top</a></p>
+  </main>
+
+  <footer class="site-footer">
+    <p>Introduction to Web Design – Fall 2025 · Daily Harvest Marketing Plan</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
